@@ -1,35 +1,35 @@
-# include "iostream"
+#include <iostream>
 #include <vector>
 using namespace std;
 
-int main() 
+int main()
 {
-    int t, a, b;
-    vector<char> z;
+    int a, b, t;
+    vector <string> d;
 
     cin >> t;
 
-    for (int i = 0; i < t; i++)
+    for(int i = 0; i < t; i++)
     {
         cin >> a >> b;
 
-        if (a == b)
+        if(a > b)
         {
-            z.push_back('=');
+            d.push_back(">");
         }
-
-        else if (a < b)
+        else if(a < b)
         {
-            z.push_back('<');
+            d.push_back("<");
         }
-    
-        else if (a > b)
+        else
         {
-            z.push_back('>');
+            d.push_back("=");
         }
     }
-
-    for (int i = 0; i < z.size(); i++) cout << z[i] << endl;
+    for(int i = 0; i < d.size(); i++)
+    {
+        cout << d[i] << "\n";
+    }
 
     return 0;
 }
