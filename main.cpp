@@ -5,7 +5,7 @@ using namespace std;
 int main()
 {
     int a, b, t;
-    vector <string> d;
+    vector <char> d;
 
     cin >> t;
 
@@ -15,15 +15,15 @@ int main()
 
         if(a > b)
         {
-            d.push_back(">");
+            d.push_back('>');
         }
         else if(a < b)
         {
-            d.push_back("<");
+            d.push_back('<');
         }
         else
         {
-            d.push_back("=");
+            d.push_back('=');
         }
     }
     for(int i = 0; i < d.size(); i++)
